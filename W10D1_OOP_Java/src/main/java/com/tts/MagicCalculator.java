@@ -26,12 +26,11 @@ public class MagicCalculator {
         double factorial = 1;
         if (num1 == 0 || num1 == 1) {
             factorial = 1;
-            System.out.println("The factorial of " + num1 + " is " + factorial + ".");
         } else {
             for (var i = num1; i > 1; i--) {
                 factorial = factorial * i;
             }
-            System.out.println("The factorial of " + num1 + " is " + factorial + ".");
+        System.out.println("The factorial of " + num1 + " is " + factorial + ".");
         }
     }
 }
