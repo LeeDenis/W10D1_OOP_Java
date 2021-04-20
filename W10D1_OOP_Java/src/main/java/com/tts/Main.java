@@ -1,5 +1,9 @@
 package com.tts;
 
+import static com.tts.Calculator.*;
+import static com.tts.MagicCalculator.*;
+
+
 public class Main {
 
     public static void main(String[] args) {
@@ -46,5 +50,50 @@ public class Main {
         System.out.println(holiday2.getMonth());
         System.out.println(holiday2.getDay());
         System.out.println("Federal Holiday?: " + holiday2.getFederal());
+
+        System.out.println("=====Calculator=====");
+        int x = 21;
+        int y = 8;
+        int z = add(x,y);
+        System.out.println("The sum of " + x + " and " + y + " is " + z + ".");
+
+        int a = 23;
+        int b = 58;
+        int c = subtract(a,b);
+        System.out.println("The difference between " + a + " and " + b + " is " + c + ".");
+
+        int d = 17;
+        int e = 48;
+        int f = multiply(d,e);
+        System.out.println("The product of " + d + " and " + e + " is " + f + ".");
+
+        int g = 48;
+        int h = 7;
+        int i = divide(g,h);
+        System.out.println("The quotient between " + g + " and " + h + " is " + i + ".");
+
+        int j = 23;
+        int k = square(j);
+        System.out.println("The square of " + j + " is " + k + ".");
+
+
+        System.out.println("=====Magic Calculator=====");
+        int l = 64;
+        sqrt(l);
+
+        int m = 23;
+        sin(m);
+
+        int n = 48;
+        cos(n);
+
+        int o = 98;
+        tan(o);
+
+        int p = 11;
+        factorial(p);
+
     }
+
+
 }
